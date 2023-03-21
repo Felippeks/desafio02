@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style2.css">
+    <link rel="stylesheet" href="./src/style.css">
     <title>Desafio 02</title>
 </head>
 
@@ -14,16 +14,19 @@
         <header>
             <nav class="navbar">
                 <div class="logo">
-                    <img src="./src/imagens/logo.png" alt="[logo da pagina]">
+                    <a href="#"><img src="./src/imagens/logo.png" alt="Logo"></a>
                 </div>
-                <ul class="navbar__links">
-                    <li><a href="#">Inicio </a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contatos</a></li>
+                <ul class="menu-principal">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
-                <button class="btn-procurar"><i class="fa-solid fa-magnifying-glass fa-2x"></i> Procurar
-                    Cursos...</button>
-
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Pesquisar Cursos">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
             </nav>
         </header>
         <section class="container__principal">
@@ -43,21 +46,21 @@
             <div class="propaganda">
                 <h2><span>Top</span> Serviços</h2>
             </div>
-            <div>
+            <div class="line1">
                 <h3 class="prop1"><i class="fa-solid fa-headset"></i> Ajuda 24 hrs</h3>
                 <p class="txt1"> Olá, somos uma escola de programadores astronautas e estamos aqui para fazer vc chegar
                     ao
                     infinito e além no mundo da programação, seja bem vindo ao <strong>Imagine Code.</strong></p>
             </div>
-            <div class="line1"></div>
-            <div>
+            <!-- <div class="line1"></div> -->
+            <div class="line2">
                 <h3 class="prop2"><i class="fa-solid fa-table-cells-large"></i> Aplicativos</h3>
                 <p class="txt2"> Olá, somos uma escola de programadores astronautas e estamos aqui para fazer vc chegar
                     ao
                     infinito e além no mundo da programação, seja bem vindo ao <strong>Imagine Code.</strong></p>
             </div>
-            <div class="line2"></div>
-            <div>
+            <!-- <div class="line2"></div> -->
+            <div class="line3">
                 <h3 class="prop3"><i class="fa-solid fa-code"></i> Código 24 hrs</h3>
                 <p class="txt3"> Olá, somos uma escola de programadores astronautas e estamos aqui para fazer vc chegar
                     ao
@@ -75,10 +78,11 @@
         </aside>
         <footer>
             <nav class="navbar__footer">
-                <div class="line3"></div>
+                <!-- <div class="line3"></div> -->
                 <div class="logo__footer">
                     <img src="./src/imagens/logo.png" alt="[logo da pagina]">
-                    <p>Nossas aulas são totalmente online, venha conhecer um mundo novo ainda não encontrado por você.</p>
+                    <p>Nossas aulas são totalmente online, venha conhecer um mundo novo ainda não encontrado por você.
+                    </p>
                 </div>
                 <div class="paginas">
                     <h4>Páginas</h4>
